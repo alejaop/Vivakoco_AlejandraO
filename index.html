@@ -10,76 +10,187 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #F4F4F4; /* Color de fondo neutro */
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
+            background-color: #003A34; /* Verde oscuro del logo */
+            color: #FFFFFF; /* Blanco para el texto */
+            padding: 20px 10px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .banner {
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
         .banner h1 {
             margin: 0;
             font-size: 2em;
+            color: #FFFFFF;
         }
         .banner img {
-            margin-left: 15px;
-            height: 50px;
+            height: 60px;
+            margin-left: 20px;
         }
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
-            text-align: center;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
         }
         nav ul li {
-            display: inline;
             margin: 0 15px;
         }
         nav ul li a {
-            color: white;
+            color: #FFFFFF;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #9BD4B7; /* Verde claro de acento */
         }
         section {
-            padding: 20px;
-            margin: 0 10px;
+            padding: 40px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
-        #catalogo .producto {
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
+        h2 {
+            color: #003A34; /* Verde oscuro */
+            border-bottom: 2px solid #003A34;
+            padding-bottom: 10px;
             margin-bottom: 20px;
+        }
+        .producto {
             display: flex;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
             align-items: center;
         }
-        #catalogo .producto img {
+        .producto img {
             max-width: 150px;
-            margin-right: 15px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .producto div {
+            flex: 1;
+        }
+        .producto h3 {
+            margin-top: 0;
+            color: #003A34; /* Verde oscuro */
+        }
+        .producto p {
+            color: #666666; /* Gris oscuro */
+        }
+        .producto button {
+            background-color: #9BD4B7; /* Verde claro de acento */
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .producto button:hover {
+            background-color: #007A6D; /* Verde más oscuro en hover */
         }
         footer {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #003A34; /* Verde oscuro */
+            color: #FFFFFF;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366; /* Verde de WhatsApp */
+            color: #FFFFFF;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 24px;
+            transition: background-color 0.3s;
+        }
+        .whatsapp-button:hover {
+            background-color: #128C7E; /* Verde oscuro de WhatsApp */
+        }
+        #carrito {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #003A34;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            z-index: 1000;
+        }
+        #carrito h2 {
+            margin-top: 0;
+            color: #003A34;
+        }
+        #carrito ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #carrito ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #EEE;
+        }
+        #carrito .total {
+            font-weight: bold;
+            margin: 10px 0;
+            color: #003A34;
+        }
+        #carrito button {
+            background-color: #9BD4B7;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        #carrito button:hover {
+            background-color: #007A6D;
+        }
+        #carrito-icon {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #9BD4B7; /* Verde claro de acento */
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        #carrito-icon img {
+            height: 40px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="banner">
-            <h1>ALLNATURAL COLOMBIA</h1> </div>
-        
-            <div class="banner">    
-            <img src="logo-coolsweet.png" alt="CoolSweet Logo"> </div>
-        
+            <h1>ALLNATURAL COLOMBIA</h1>
+            <img src="logo.jpeg" alt="CoolSweet Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -96,81 +207,119 @@
 
     <section id="catalogo">
         <h2>Catálogo</h2>
+
+        <!-- Producto 1 -->
         <div class="producto">
             <img src="miel-agave.jpg" alt="Miel de Agave">
             <div>
                 <h3>Miel de Agave</h3>
-                <p>Es un edulcorante <b>ORGÁNICO</b>obtenido de la extracción de los azucares del agave, considerado como un carbohidrato simple.</p>
+                <p>Es un edulcorante <b>ORGÁNICO</b> obtenido de la extracción de los azúcares del agave, considerado como un carbohidrato simple.</p>
                 <ul>
-                    <li> Es 1.4 veces más dulce que el azucar</li>
-                    <li> Menos de 4 calorías por gramo</li>
-                    <li> De origen vegetal apto para veganos</li>
-                    <li> Alto contenido de fructooligosacáridos que mejoran el funcionamiento intestinal</li>
-                    <li> Práctico para endulzar cualquier receta, tambien como syrup de waffle y pancakes</li></ul>
-                <p>peso: 470g</p>
-                <p>Precio: $37000</p>
+                    <li>Es 1.4 veces más dulce que el azúcar</li>
+                    <li>Menos de 4 calorías por gramo</li>
+                    <li>De origen vegetal apto para veganos</li>
+                    <li>Alto contenido de fructooligosacáridos que mejoran el funcionamiento intestinal</li>
+                    <li>Práctico para endulzar cualquier receta, también como syrup de waffle y pancakes</li>
+                </ul>
+                <p>Peso: 470g</p>
+                <p>Precio: $37,000</p>
+                <div>
+                    <label for="cantidad-miel-agave">Cantidad:</label>
+                    <input type="number" id="cantidad-miel-agave" name="cantidad-miel-agave" min="1" value="1">
+                    <button onclick="addToCart('Miel de Agave', 37000, document.getElementById('cantidad-miel-agave').value)">Añadir al Carrito</button>
+                </div>
             </div>
         </div>
+
+        <!-- Producto 2 -->
         <div class="producto">
             <img src="arepa-curcuma-zanahoria.jpg" alt="Arepa de Cúrcuma y Zanahoria">
             <div>
                 <h3>Arepa de Cúrcuma y Zanahoria</h3>
                 <p>Mezcla de harina de maíz y cúrcuma, baja en sal marina y chunks de zanahoria.</p>
-                <p>Precio: $10000</p>
+                <p>Precio: $10,000</p>
+                <div>
+                    <label for="cantidad-arepa-curcuma">Cantidad:</label>
+                    <input type="number" id="cantidad-arepa-curcuma" name="cantidad-arepa-curcuma" min="1" value="1">
+                    <button onclick="addToCart('Arepa de Cúrcuma y Zanahoria', 10000, document.getElementById('cantidad-arepa-curcuma').value)">Añadir al Carrito</button>
+                </div>
             </div>
         </div>
+
+        <!-- Producto 3 -->
         <div class="producto">
             <img src="arepa-espinaca-puerro.jpg" alt="Arepa de Espinaca y Puerro">
             <div>
                 <h3>Arepa de Espinaca y Puerro</h3>
-                <p>Mezcla de harina de maíz , bajo en sal marina y chuncks de espinaca y puerro.</p>
-                <p>Precio: $10000</p>
+                <p>Mezcla de harina de maíz, bajo en sal marina y chunks de espinaca y puerro.</p>
+                <p>Precio: $10,000</p>
+                <div>
+                    <label for="cantidad-arepa-espinaca">Cantidad:</label>
+                    <input type="number" id="cantidad-arepa-espinaca" name="cantidad-arepa-espinaca" min="1" value="1">
+                    <button onclick="addToCart('Arepa de Espinaca y Puerro', 10000, document.getElementById('cantidad-arepa-espinaca').value)">Añadir al Carrito</button>
+                </div>
             </div>
         </div>
+
+        <!-- Producto 4 -->
         <div class="producto">
-            
+            <img src="cafe-cbd.jpg" alt="Café de Especialidad con CBD">
             <div>
                 <h3>Café de Especialidad con CBD</h3>
-                <img src="cafe-cbd.jpg" alt="Café de Especialidad con CBD">
-                <p>Café de especialidad con infusión de CBD producido en santander. en el municipio de matanza, colindante con el paramo de santurban, con beneficios antioxidantes, analgésicos, antiinflamatorios el cual da una energía y relajación al cuerpo, mente y espiritu. previene la ansiedad y el estrés.</p>
-                <p>presentación:250g Precio: $55000.</p>
-                <p>presentación:500g Precio: $90000.</p>
-                
+                <p>Café de especialidad con infusión de CBD producido en Santander. Beneficios antioxidantes, analgésicos, antiinflamatorios, previene la ansiedad y el estrés.</p>
+                <p>Presentación: 250g Precio: $55,000</p>
+                <p>Presentación: 500g Precio: $90,000</p>
+                <div>
+                    <label for="cantidad-cafe-cbd">Cantidad:</label>
+                    <input type="number" id="cantidad-cafe-cbd" name="cantidad-cafe-cbd" min="1" value="1">
+                    <button onclick="addToCart('Café de Especialidad con CBD', 55000, document.getElementById('cantidad-cafe-cbd').value)">Añadir al Carrito</button>
+                </div>
             </div>
-            <div>
-                
-                <h3> DRIP Café de Especialidad con CBD</h3>
-                <img src="cafe-cbd1.jpg" alt="Café de Especialidad con CBD">
-
-                <p>Drip de café de especialidad con CBD .</p>
-                <p>presentación:8g Precio: $7000.</p>
-                
-                
-            </div>
-       
         </div>
+
+        <!-- Producto 5 -->
+        <div class="producto">
+            <img src="cafe-cbd1.jpg" alt="DRIP Café de Especialidad con CBD">
+            <div>
+                <h3>DRIP Café de Especialidad con CBD</h3>
+                <p>Drip de café de especialidad con CBD.</p>
+                <p>Presentación: 8g Precio: $7,000</p>
+                <div>
+                    <label for="cantidad-drip-cafe-cbd">Cantidad:</label>
+                    <input type="number" id="cantidad-drip-cafe-cbd" name="cantidad-drip-cafe-cbd" min="1" value="1">
+                    <button onclick="addToCart('DRIP Café de Especialidad con CBD', 7000, document.getElementById('cantidad-drip-cafe-cbd').value)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
         <div class="producto">
             <img src="cafe-especialidad.jpg" alt="Café de Especialidad">
             <div>
                 <h3>Café de Especialidad</h3>
-                <p>Café de especialidad, cultivado en el municipio de Matanza - Santandera a 1450msnm.</p>
+                <p>Café de especialidad cultivado en el municipio de Matanza - Santander a 1450msnm.</p>
                 <ul>
-                    <li> Aroma: natural</li>
-                    <li> Cuerpo: Medio sedoso</li>
-                    <li> Acidez: Citrica</li>
-                    <li> Sabor: Panela, Nuez, Especias</li>
-                    <li> Tostión: Medio</li>
-                    <li> Puntaje en taza limpia superior a 84 puntos</li>
+                    <li>Aroma: Natural</li>
+                    <li>Cuerpo: Medio sedoso</li>
+                    <li>Acidez: Cítrica</li>
+                    <li>Sabor: Panela, Nuez, Especias</li>
+                    <li>Tostión: Medio</li>
+                    <li>Puntaje en taza limpia superior a 84 puntos</li>
                 </ul>
-                
-                <p>presentación:8g Precio: $7000.</p>
+                <p>Presentación: 8g Precio: $7,000</p>
+                <div>
+                    <label for="cantidad-cafe-especialidad">Cantidad:</label>
+                    <input type="number" id="cantidad-cafe-especialidad" name="cantidad-cafe-especialidad" min="1" value="1">
+                    <button onclick="addToCart('Café de Especialidad', 7000, document.getElementById('cantidad-cafe-especialidad').value)">Añadir al Carrito</button>
+                </div>
             </div>
         </div>
+
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form>
+        <form id="contact-form">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
             
@@ -187,12 +336,63 @@
         </form>
         <p>Dirección: Carrera 33 #86-144 Bucaramanga-Santander</p>
         <p>Teléfono: +57 3005663459</p>
-        <p>Correo Electrónico: contato@allnaturalcolombia.com.co</p>
-        <!-- Aquí irían los íconos de redes sociales -->
+        <p>Correo Electrónico: contacto@allnaturalcolombia.com.co</p>
     </section>
 
     <footer>
         <p>&copy; 2024 ALLNATURAL COLOMBIA</p>
     </footer>
+
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-items"></ul>
+        <p class="total">Total: $<span id="carrito-total">0</span></p>
+        <button onclick="checkout()">Comprar</button>
+    </div>
+
+    <div id="carrito-icon">
+        <img src="carrito.svg" >
+    </div>
+
+    <a href="https://wa.me/573232395074" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        let carrito = [];
+
+        function addToCart(producto, precio, cantidad) {
+            const item = carrito.find(p => p.producto === producto);
+            if (item) {
+                item.cantidad += parseInt(cantidad);
+            } else {
+                carrito.push({ producto, precio, cantidad: parseInt(cantidad) });
+            }
+            updateCart();
+        }
+
+        function updateCart() {
+            let total = 0;
+            const carritoItems = document.getElementById('carrito-items');
+            carritoItems.innerHTML = '';
+
+            carrito.forEach(item => {
+                total += item.precio * item.cantidad;
+                carritoItems.innerHTML += `<li>${item.producto} - ${item.cantidad} x $${item.precio} = $${item.precio * item.cantidad}</li>`;
+            });
+
+            document.getElementById('carrito-total').innerText = total;
+            document.getElementById('carrito').style.display = 'block';
+        }
+
+        function checkout() {
+            let mensaje = 'Hola, quiero comprar:\n';
+            carrito.forEach(item => {
+                mensaje += `${item.producto} - ${item.cantidad} x $${item.precio} = $${item.precio * item.cantidad}\n`;
+            });
+            mensaje += `Total: $${document.getElementById('carrito-total').innerText}`;
+            window.location.href = `https://wa.me/573232395074?text=${encodeURIComponent(mensaje)}`;
+        }
+    </script>
 </body>
 </html>
