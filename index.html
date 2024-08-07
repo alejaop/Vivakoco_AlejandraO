@@ -13,7 +13,8 @@
             background-color: #F4F4F4; /* Color de fondo neutro */
         }
         header {
-            background-color: #74FF33; /* Color del banner cambiado */
+            background: url('banner.jpg') no-repeat center center; /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
+17	        background-size: cover; /* Asegura que la imagen cubra todo el banner */
             color: #FFFFFF; /* Blanco para el texto */
             padding: 20px 10px;
             position: relative;
@@ -33,7 +34,7 @@
             text-align: center;
         }
         .banner img {
-            position: relative;
+            position: absolute;
             top: 0px;
             right: 10px; /* Ajustar según sea necesario */
             height: 200px; /* Ajustar el tamaño del logotipo */
