@@ -16,6 +16,7 @@
             background-color: #74FF33; /* Color del banner cambiado */
             color: #FFFFFF; /* Blanco para el texto */
             padding: 20px 10px;
+            position: relative;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -23,18 +24,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
         .banner h1 {
             margin: 0;
             font-size: 2em;
             color: #FFFFFF;
+            text-align: center;
         }
         .banner img {
-            height: 200px; /* Aumentar el tamaño del logotipo */
+            position: absolute;
             top: 10px;
-            right: 70px;
-             
-            
+            right: 10px; /* Ajustar según sea necesario */
+            height: 100px; /* Ajustar el tamaño del logotipo */
         }
         .social-icons {
             margin-top: 10px;
@@ -60,7 +62,7 @@
             transition: color 0.3s;
         }
         nav ul li a:hover {
-            color: #74FF33; /* Verde claro de acento */
+            color: #003A34; /* Verde oscuro de acento */
         }
         section {
             padding: 40px 20px;
@@ -137,7 +139,7 @@
             transition: background-color 0.3s;
         }
         .whatsapp-button:hover {
-            background-color: #74FF33; /* Verde oscuro de WhatsApp */
+            background-color: #007A6D; /* Verde oscuro de WhatsApp */
         }
         #carrito {
             display: none;
@@ -180,7 +182,7 @@
             transition: background-color 0.3s;
         }
         #carrito button:hover {
-            background-color: #74FF33;
+            background-color: #007A6D;
         }
         #carrito-icon {
             position: fixed;
@@ -355,7 +357,7 @@
     <footer>
         <p>&copy; 2024 ALLNATURAL COLOMBIA</p>
         <div class="social-icons">
-            <a href="https://www.instagram.com/allnaturalcolombia" target="_blank">
+            <a href="https://www.instagram.com/coolsweetcolombia" target="_blank">
                 <img src="instagram.svg" alt="Instagram Logo">
             </a>
             <a href="https://wa.me/573232395074" target="_blank" class="whatsapp-button">
