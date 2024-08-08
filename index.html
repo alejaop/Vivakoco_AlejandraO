@@ -15,7 +15,7 @@
         header {
             background: url('banner.jpg') no-repeat center center; /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
             background-size: cover; /* Asegura que la imagen cubra todo el banner */
-            color: #74FF33; /* Verde para el texto */
+            color: #FFFFFF; /* Verde para el texto */
             padding: 150px;
             position: relative;
             text-align: center;
@@ -31,7 +31,7 @@
         .banner h1 {
             margin: 0;
             font-size: 5vw; /* Tamaño de fuente proporcional al tamaño del banner */
-            color: #74FF33; /* Color verde para el texto */
+            color: #FFFFFF; /* Color verde para el texto */
             text-align: center;
         }
         .banner img {
@@ -58,7 +58,7 @@
             margin: 0 65px;
         }
         nav ul li a {
-            color: #74FF33;
+            color: #FFFFFF;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
@@ -200,6 +200,25 @@
             height: 40px;
             vertical-align: middle;
         }
+        .recetas {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .recetas h3 {
+            margin-top: 0;
+            color: #74FF33; /* Verde cool */
+        }
+        .recetas p {
+            color: #666666; /* Gris oscuro */
+        }
+        .recetas img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -212,6 +231,7 @@
             <ul>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#recetas">Recetas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -333,6 +353,42 @@
         </div>
 
     </section>
+    
+    <section id="recetas">
+        <h2>Recetas Fáciles y Rápidas</h2>
+
+        <!-- Receta 1 -->
+        <div class="recetas">
+            <h3>Batido Energético con Miel de Agave</h3>
+            <img src="batido-energetico.jpg" alt="Batido Energético">
+            <p>Ingredientes:</p>
+            <ul>
+                <li>1 plátano</li>
+                <li>1 taza de leche de almendras</li>
+                <li>1 cucharada de miel de agave</li>
+                <li>1 cucharadita de semillas de chía</li>
+                <li>Hielo al gusto</li>
+            </ul>
+            <p>Preparación:</p>
+            <p>En una licuadora, combina todos los ingredientes hasta obtener una mezcla suave. Sirve frío y disfruta de un batido nutritivo y delicioso.</p>
+        </div>
+
+        <div class="recetas">
+            <h3>Galletas de Edulcorante de Sucrosa</h3>
+            <img src="galletas-edulcorante.jpg" alt="Galletas de Edulcorante de Sucrosa">
+            <p>Ingredientes:</p>
+            <ul>
+                <li>1 taza de harina de avena</li>
+                <li>1/2 taza de mantequilla de almendra</li>
+                <li>1/4 taza de edulcorante de sucrosa</li>
+                <li>1 huevo</li>
+                <li>1 cucharadita de extracto de vainilla</li>
+                <li>1/2 cucharadita de polvo de hornear</li>
+            </ul>
+            <p>Preparación:</p>
+            <p>Precalienta el horno a 180°C. Mezcla todos los ingredientes hasta formar una masa homogénea. Forma bolitas y colócalas en una bandeja para hornear. Hornea durante 12-15 minutos o hasta que estén doradas. Deja enfriar antes de servir.</p>
+        </div>
+        </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
