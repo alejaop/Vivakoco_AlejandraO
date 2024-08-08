@@ -14,9 +14,9 @@
         }
         header {
             background: url('banner.jpg') no-repeat center center; /* Cambia 'ruta/a/tu/imagen.jpg' por la ruta de tu imagen */
-        background-size: cover; /* Asegura que la imagen cubra todo el banner */
-            color: #74FF33; /* Blanco para el texto */
-            padding: 150px ;
+            background-size: cover; /* Asegura que la imagen cubra todo el banner */
+            color: #74FF33; /* Verde para el texto */
+            padding: 150px;
             position: relative;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -26,11 +26,12 @@
             align-items: center;
             justify-content: center;
             position: relative;
+            height: 100%; /* Asegura que el banner ocupe el 100% del contenedor */
         }
         .banner h1 {
             margin: 0;
-           /* font-size: 2em;*/
-            color: #74FF33;
+            font-size: 6vw; /* Tamaño de fuente proporcional al tamaño del banner */
+            color: #74FF33; /* Color verde para el texto */
             text-align: center;
         }
         .banner img {
@@ -204,7 +205,7 @@
 <body>
     <header>
         <div class="banner">
-            
+            <h1>Bienvenidos a CoolSweet</h1>
             <img src="logotipo.png" alt="CoolSweet Logo">
         </div>
         <nav>
@@ -416,3 +417,4 @@
     </script>
 </body>
 </html>
+
